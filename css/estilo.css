@@ -1,0 +1,576 @@
+/******Limpando formatações padrões********/
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-size: 1em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #e6e6e6;
+	text-align: justify;
+}
+
+/******Layout********/
+
+#area-cabecalho{
+	text-align: center;
+	background: #f7b600;
+	padding: 15px;
+}
+
+#area-logo, #area-menu{
+	padding: 10px;
+	margin-top: 20px;
+}
+
+
+/***** Aplicado em todas as outras páginas menos lancamentos.html***/
+#area-principal{
+	width: 920px;
+	margin: 0px auto;
+	padding: 15px;
+	display: flex;
+	gap: 20px;
+}
+
+#area-postagens{
+	width: 660px;
+}
+
+/*****Aplicado somente em lancamentos.html*****/
+
+#lancamentos-page #area-principal{
+	width: 920px;
+	display: flex;
+	padding: 15px;
+	margin: 0px auto;
+	gap: 15px;
+}
+
+#lancamentos-page #area-postagens{
+	width: 660px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+#lancamentos-page .postagem{
+	background: #FFF;
+	padding: 15px;
+	text-align: center;
+}
+
+#lancamentos-page .postagem img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+#lancamentos-page .nome {
+	font-weight: bold;
+	margin: 10px 0 5px;
+}
+
+#lancamentos-page .preco{
+	color: #f7b600;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+#lancamentos-page .postagem a{
+	display: inline-block;
+	background: #f7b600;
+	color: #000;
+	padding: 8px 15px;
+	text-decoration: none;
+}
+
+
+
+#area-lateral{
+	width: 240px;
+}
+
+.postagem{
+	background: #FFF;
+	margin-bottom: 20px;
+	padding: 20px;
+	overflow: hidden;
+}
+
+
+.conteudo-lateral{
+	background: white;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.postagem-lateral{
+	font-size: 0.8em;
+	padding: 5px;
+	border-bottom: 1px dotted #CCC;
+}
+
+
+ul a {
+	width: 200px;
+	height:40px;
+	display: block;
+	background: #f7b600 url(../imagens/menu.png) no-repeat left bottom;
+	text-decoration: none;
+	text-indent: 40px;
+	line-height: 40px;
+}
+
+ul li a:hover{
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #FFF;
+}
+
+.pagina-gameplays ul {
+	list-style-type: none;
+	padding: 0px;
+}
+#navegacao a{
+	color: #FFF;
+}
+
+#rodape{
+	clear: both;
+	text-align: center;
+	padding: 15px;
+	background: #CCC;
+}
+
+/*** index****/
+#index-page .postagem{
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+#index-page .postagem img{
+    margin: 10px 0;
+}
+
+/*****formatação menu*****/
+a{
+	text-decoration: none;
+}
+
+a:link, a:visited{
+	color: #f7b600;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+#area-cabecalho a:link,#area-cabecalho a:visited{
+	color: #FFF;
+	padding: 15px;
+}
+
+#area-cabecalho a:hover{
+	color: #f7b600;
+	background: #FFF;
+	text-decoration: none;
+}
+
+/*****formatação de gameplays****/
+.pagina-gameplays #navegacao{
+	list-style-type: none;
+	padding: 0px;
+	text-align: center;
+}
+
+.pagina-gameplays #navegacao li{
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.pagina-gameplays #navegacao a{
+	display: block;
+	background: #e8a000;
+	color: #FFF;
+	padding: 15px 20px;
+	text-decoration: none;
+	border-radius: 8px;
+	font-weight: bold;
+	text-align: center;
+	text-indent: 0px;
+}
+
+.pagina-gameplays #navegacao a:hover{
+	background: #d48800;
+}
+
+.pagina-gameplays h2 {
+	text-align: center;
+	color: #634d4d;
+	font-size: 2em;
+	margin-bottom: 30px;
+}
+
+/******Formatações gerais******/
+h1{
+	color: #4e4e4e;
+	font-size: 2.5em;
+}
+
+h2{
+	color: #f7b600;
+}
+
+h3{
+	color: #565656;
+	background: #CCC;
+	padding: 5px;
+}
+
+h4{
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+#index-page h3{
+	background: none;
+	padding: 5px;
+	color: #565656
+	
+}
+
+.branco{
+	color: white;
+}
+
+.data-postagem{
+	font-size: 0.8em;
+	display: block;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+.centralizar:link, .centralizar:visited{
+	display: block;
+	text-align: center;
+	color: #000;
+}
+
+ul{
+	padding-left: 40px;
+	margin-top: 15px;
+}
+
+ul + h4 {
+	margin-top: 15px;
+}
+
+/* Garante que o botão voltar na lateral fique igual ao da postagem */
+.conteudo-lateral a.voltar {
+    display: inline-block;
+    margin-top: 15px;
+    text-align: center;
+    background: #f7b600; /* Laranja padrão do seu código */
+    color: #FFF !important; /* Força o texto branco */
+    padding: 8px 15px;
+    text-decoration: none !important;
+    font-weight: bold;
+    border-radius: 0px; /* Ou 5px se quiser arredondado como no formulário */
+}
+
+.conteudo-lateral a.voltar:hover {
+    background: #f99200;
+    text-decoration: none !important;
+}
+
+    
+.postagem img {
+    display: block;
+    margin-top: 20px;   
+    margin-bottom: 20px;
+	margin: 20px 0 !important;
+	width: 620px;
+	height: auto;
+	clear: both;
+}
+
+.postagem p + img, 
+.data-postagem + img {
+    margin-top: 25px;     /* Força o mesmo espaço vindo do texto ou da data */
+}
+
+/* FORÇA O BOTÃO A APARECER EM QUALQUER PÁGINA */
+a.voltar {
+	display: inline-block;
+	margin-top: 15px;
+	text-align: center;
+	background: #f7b600;
+	color: #FFF;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: normal;
+}
+a.voltar:hover {
+	background: #f99200;
+	text-decoration: none;
+	color: #FFF;
+}
+
+
+.postagem h1{
+	text-align: center;
+}
+
+.postagem p{
+	margin-top: 0px;
+	margin-bottom: 5px;
+	line-height: 1.5em;
+}
+
+#index-page #area-lateral h3 {
+    background: #CCC;
+}
+#index-page #area-postagens h3 {
+    background: none;
+}
+
+
+
+/****Fotos lado a lado*****/
+.grid-lancamentos{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	margin: 20px 0;
+}
+
+.item-lancamento {
+	text-align: center;
+}
+
+.item-lancamento img {
+	width: 100%;
+	height: auto;
+	margin: 0 0 10px 0;
+}
+
+.item-lancamento h3 {
+	background: none;
+	color: #f7b600;
+	margin: 10px 0 5px 0;
+	padding: 0;
+	font-size: 1.1em;
+
+}
+
+.preco-lancamento {
+	font-size: 1.3em;
+	color: #4e4e4e;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.bnt-comprar {
+	display: inline-block;
+	padding: 10px 25px;
+	background: #f7b600;
+	color: #FFF !important;
+	text-decoration: none !important;
+	border-radius: 4px;
+	transition: background 0.3s;
+}
+
+.bnt-comprar:hover {
+	background: #f99200;
+}
+
+/******** FORMULÁRIO (LOGIN  ********/
+
+body#form-page{
+    background: #643d87 url(../imagens/fundo.jpg) no-repeat top center;
+	
+}
+
+#container{
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin: 120px auto 0 auto;
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+    position: relative;
+}
+
+#container img {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+#container input{
+    height: 50px;
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px;
+}
+
+
+#container input.email,
+#container input.senha {
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+#container input.email {
+    background-image: url(../imagens/icone-usuario.png);
+}
+
+#container input.senha {
+    background-image: url(../imagens/icone-cadeado.png);
+}
+
+
+#container input.submit{
+    color: #FFF;
+    border: 2px solid #db7d00;
+    padding: 5px 20px;
+    height: 45px;
+    width: 90%;
+    background-image: linear-gradient(to bottom, #faa600, #f68a00);
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+#container input.submit:hover{
+    background-image: linear-gradient(to bottom, #fbb700, #f79300);
+}
+
+.cadastro{
+	margin-top: 15px;
+	font-size: 14px;
+	color: #333;
+}
+
+.cadastro a:link,
+.cadastro a:visited {
+	color: #a57230;
+	font-weight: bold;
+
+}
+
+.cadastro a:hover {
+	text-decoration: underline;
+}
+	/******** CADASTRO ********/
+
+body#cadastro-page{
+	background: #643d87 url(../imagens/fundo.jpg) no-repeat top center;
+
+}
+
+#container-cadastro {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin: 58px auto 0 auto;
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+    position: relative; /* FUNDAMENTAL: o botão se baseia aqui */
+}
+
+#cadastro-page #container-cadastro .voltar{
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	background: #f7b600;
+	color: #FFF;
+	padding: 8px 15px;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+
+
+#container-cadastro img {
+	width: 120px;
+	margin-top: -60px;
+	margin-bottom: 30px;
+}
+
+/****INPUTS DO CADASTRO****/
+#container-cadastro input{
+	height: 50px;
+	width: 80%;
+	font-size: 18px;
+	margin-bottom: 10px;
+	background-color: #FFF;
+	border: none;
+	border-radius: 5px;
+	padding-left: 40px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+
+/****ÍCONE USUÁRIO***/
+#container-cadastro .cad-usuario,
+#container-cadastro .cad-email{
+	background-image: url(../imagens/icone-usuario.png);
+
+}
+
+#container-cadastro .cad-senha{
+	background-image: url(../imagens/icone-cadeado.png);
+}
+
+/***Botão***/
+
+#container-cadastro .cad-submit{
+	color: #FFF;
+	border: 2px solid #db7d00;
+	height: 45px;
+	width: 90%;
+    padding-left: 0 !important; /* Garante a remoção do espaço do ícone */
+    background-image: linear-gradient(to bottom, #faa600, #f68a00); /* Mantém o gradiente */
+    background-color: #f68a00;
+	
+}
+
+/***Link***/
+.cadastro-link{
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+.cadastro-link a{
+	color: #a57230;
+	font-weight: bold;
+}
+
+.cadastro-link a:hover{
+	text-decoration: underline;
+}
+
+/***Voltar para o login ***/
+#form-page #container .voltar{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+
+    background: #f7b600;
+    color: #FFF;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
